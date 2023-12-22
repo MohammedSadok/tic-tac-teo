@@ -1,3 +1,4 @@
+import { Gamepad2 } from "lucide-react";
 import { cn } from "../lib/utils";
 import { ModeToggle } from "./ModeToggle";
 
@@ -13,12 +14,10 @@ export function MainNav({
       )}
       {...props}
     >
-      <a
-        href="/examples/dashboard"
-        className="text-sm font-medium transition-colors hover:text-primary"
-      >
-        Overview
-      </a>
+      <h1 className="flex items-center justify-center gap-4 text-2xl font-bold">
+        Tic Tac Toe Game{" "}
+        <Gamepad2 size={30} strokeWidth={2.5} className="mt-1" />
+      </h1>
 
       <div className="self-end">
         <ModeToggle />
